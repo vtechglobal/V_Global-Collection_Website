@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">V-Global Collection</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product1.html">Product</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart">
+                    <a href="#" id="cart-icon">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="cart-section">
+            <div class="cart-container">
+                <h2>Your Shopping Cart</h2>
+                <div id="cart-items"></div>
+                <div class="cart-summary">
+                    <p>Total: <span id="cart-total">$0.00</span></p>
+                    <button id="checkout-button">Proceed to Checkout</button>
+                </div>
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+        <script src="script.js"></script>        
+    </header>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h4>About V-Global Collection</h4>
+                <p>V-Global Collection offers the finest quality clothing crafted with care and designed to make you stand out. Our commitment to sustainability and style makes us a top choice for fashion enthusiasts around the world.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product1.html">Our Products</a></li>
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p><i class="fa fa-map-marker"></i> Church street Abule-Oshun satelite Town</p>
+                <p><i class="fa fa-phone"></i> +2349071118563</p>
+                <p><i class="fa fa-envelope"></i> vtechglobalcomputers@gmail.com</p>
+            </div>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">Facebook<i class="fa fa-facebook"></i></a>
+                <a href="#">Twitter<i class="fa fa-twitter"></i></a>
+                <a href="#">Instagram<i class="fa fa-instagram"></i></a>
+                <a href="#">LinkedIn<i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 V-Global Collection. All rights reserved.</p>
+            <a href="contact.html" class="cta">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
