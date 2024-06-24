@@ -689,7 +689,7 @@ footer {
     nav ul {
         flex-direction: row;
         align-items: flex-start;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     nav ul li {
