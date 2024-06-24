@@ -689,7 +689,12 @@ footer {
     nav ul {
         flex-direction: row;
         align-items: flex-start;
-        flex-wrap: nowrap;
+        flex-wrap: wrap-reverse;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
     }
 
     nav ul li {
