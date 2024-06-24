@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const checkoutButton = document.getElementById('checkout-button');
     const orderForm = document.getElementById('order-form');
     const checkoutForm = document.getElementById('checkout-form');
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const navLinks = document.getElementById("nav-links");
+
     let cart = [];
 
     // Toggle cart visibility
@@ -86,6 +89,9 @@ document.addEventListener('DOMContentLoaded', function () {
         cart = cart.filter(item => item.id !== itemId);
         updateCartDisplay();
     }
+    hamburgerIcon.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
 
     // Initial cart display
     updateCartDisplay();
