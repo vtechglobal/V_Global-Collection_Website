@@ -76,22 +76,6 @@ nav ul li a.blinking {
     animation: blink 1s infinite;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
 
 
 h2, h3 {
@@ -244,18 +228,21 @@ p {
 .feature-grid article {
     max-width: 300px;
     padding: 20px;
-    background: #f8f8f8;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 1.5rem;
+    opacity: 0.92;
+    background: #AB9EA9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .feature-grid img {
-    width: 280px;
+    width: 300px;
     height: 250px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
+    
 }
 
 .feature-grid h3 {
@@ -342,6 +329,12 @@ p {
 .contact {
     padding: 40px 20px;
     text-align: center;
+    background-image: url(clothbk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    
 }
 
 .contact form {
@@ -350,15 +343,19 @@ p {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    width: 300px;
+    height: 450px;
+    opacity: 0.92;
+    background: #AB9EA9;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact form label {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: bold;
-    color: #333;
+    color: #070505;
+    text-align: left;
 }
 
 .contact form input,
@@ -680,7 +677,24 @@ footer {
         display: flex;
         justify-content: center;
         
-    
-        
     }
+    /* Responsive Design */
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    
+}
+
 }
